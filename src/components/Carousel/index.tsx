@@ -16,6 +16,7 @@ export const Carousel: React.FC = (): JSX.Element => {
         modules={[Navigation, Pagination]}
         slidesPerView={1}
       >
+        {/* TODO: missing route to pages */}
         <SwiperSlide>
           <Flex
             justifyContent='center'

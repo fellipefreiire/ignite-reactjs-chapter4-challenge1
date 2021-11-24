@@ -8,7 +8,7 @@ import { Carousel } from '../components/Carousel'
 const Home: NextPage = () => {
   return (
     <Box>
-      <Header />
+      <Header isHome={true} />
       <Banner />
       <TravelTypes />
       <Divider w='90px' mt='80px' mb='52px' ml='auto' mr='auto' borderColor='dark.text' />
