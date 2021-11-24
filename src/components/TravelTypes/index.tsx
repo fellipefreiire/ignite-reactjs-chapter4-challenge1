@@ -14,7 +14,7 @@ export const TravelTypes: React.FC = (): JSX.Element => {
       {data.map(item => (
         <Flex
           key={item.alt}
-          flexDirection='column'
+          direction='column'
           justifyContent='center'
           alignItems='center'
         >
