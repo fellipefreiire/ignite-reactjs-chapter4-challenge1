@@ -6,8 +6,7 @@ import { Header } from "../components/Header";
 import { continentDescriptions } from '../utils/continentsInfo'
 
 const AmericaDoNorte: NextPage = () => {
-  //TODO: Change continent name
-  const continent = continentDescriptions.find(continent => continent.name === 'europe')
+  const continent = continentDescriptions.find(continent => continent.name === 'northAmerica')
 
   return (
     <>
