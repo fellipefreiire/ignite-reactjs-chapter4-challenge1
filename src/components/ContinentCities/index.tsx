@@ -19,7 +19,7 @@ export const ContinentCities: React.FC<ContinentCitiesProps> = ({ cities }): JSX
         Cidades +100
       </Heading>
 
-      <Flex css={{ gap: '45px' }} wrap='wrap'>
+      <Flex mt='40px' css={{ gap: '45px' }} wrap='wrap'>
         {cities?.map(city => (
           <Flex direction="column" key={city.name} w='256px' h='279px' >
             <Image src={city.cityPhotoUrl} width={256} height={173} alt={city.name} />

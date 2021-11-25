@@ -1,3 +1,4 @@
+//TODO: finish continents info
 export const continentDescriptions = [
   {
     name: 'europe',

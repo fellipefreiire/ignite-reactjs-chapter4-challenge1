@@ -1,4 +1,5 @@
 import { Box, Flex } from '@chakra-ui/react'
+import { useRouter } from 'next/dist/client/router'
 import Image from 'next/image'
 import { MdOutlineArrowBackIosNew } from 'react-icons/md'
 
@@ -7,6 +8,8 @@ interface HeaderProps {
 }
 
 export const Header: React.FC<HeaderProps> = ({ isHome }): JSX.Element => {
+  const router = useRouter()
+
   return (
     <>
       {isHome && <Flex
@@ -34,8 +37,7 @@ export const Header: React.FC<HeaderProps> = ({ isHome }): JSX.Element => {
         pl='140px'
         pr='140px'
       >
-        {/* TODO: missing back to home function */}
-        <MdOutlineArrowBackIosNew />
+        <MdOutlineArrowBackIosNew onClick={() => { router.push('/') }} />
 
         <Box mr='488px'>
           <Image

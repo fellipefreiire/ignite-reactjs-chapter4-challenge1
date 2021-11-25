@@ -7,7 +7,7 @@ export const Banner: React.FC = (): JSX.Element => {
       <Flex justifyContent='space-between'>
         <Box pt='80px' h='265' w='524px' boxSizing='border-box'>
           <Text fontSize='36' fontWeight='500' color='light.headings'>
-            5 continentes, <br />
+            6 continentes, <br />
             infinitas possibilidades.
           </Text>
           <Text fontSize='20' fontWeight='300' color='light.info' mt='20px'>

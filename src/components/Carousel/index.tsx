@@ -4,8 +4,12 @@ import { Navigation, Pagination } from 'swiper'
 import 'swiper/css'
 import 'swiper/css/navigation'
 import 'swiper/css/pagination'
+import { useRouter } from 'next/dist/client/router'
+import { continentsInfo } from './continentsInfo'
 
 export const Carousel: React.FC = (): JSX.Element => {
+  const router = useRouter()
+
   return (
     <Box w='1240px' h='450px' m='auto' mb='40px'>
       <Swiper
@@ -16,30 +20,23 @@ export const Carousel: React.FC = (): JSX.Element => {
         modules={[Navigation, Pagination]}
         slidesPerView={1}
       >
-        {/* TODO: missing route to pages */}
-        <SwiperSlide>
-          <Flex
-            justifyContent='center'
-            alignItems='center'
-            flexDirection='column'
-            h='450px'
-            bgImage={"url('/europe.png')"}
-          >
-            <Box textAlign='center'>
-              <Text fontSize='48px' fontWeight='700' color='light.text'>Europa</Text>
-              <Text fontSize='24px' fontWeight='700' color='light.info'>O continente mais antigo.</Text>
-            </Box>
-          </Flex>
-        </SwiperSlide>
-        <SwiperSlide>
-          <Box h='450px' bgSize='cover' bgImage={"url('/northAmerica.jpg')"}></Box>
-        </SwiperSlide>
-        <SwiperSlide>
-          <Box h='450px' bgImage={"url('/europe.png')"}></Box>
-        </SwiperSlide>
-        <SwiperSlide>
-          <Box h='450px' bgImage={"url('/europe.png')"}></Box>
-        </SwiperSlide>
+        {continentsInfo.map(continent => (
+          <SwiperSlide key={continent.name}>
+            <Flex
+              justifyContent='center'
+              alignItems='center'
+              flexDirection='column'
+              h='450px'
+              bgImage={`url('${continent.bgImageUrl}')`}
+              onClick={() => router.push(`${continent.pageUrl}`)}
+            >
+              <Box textAlign='center'>
+                <Text fontSize='48px' fontWeight='700' color='light.text'>{continent.name}</Text>
+                <Text fontSize='24px' fontWeight='700' color='light.info'>{continent.description}</Text>
+              </Box>
+            </Flex>
+          </SwiperSlide>
+        ))}
       </Swiper>
     </Box>
   )
