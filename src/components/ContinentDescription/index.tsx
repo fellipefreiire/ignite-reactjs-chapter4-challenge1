@@ -1,4 +1,5 @@
-import { Box, Flex, Text } from "@chakra-ui/react"
+import { Box, Flex, Text, Tooltip } from "@chakra-ui/react"
+import { MdOutlineInfo } from 'react-icons/md'
 
 interface ContinentDescriptionProps {
   description: string | undefined
@@ -23,8 +24,24 @@ export const ContinentDescription: React.FC<ContinentDescriptionProps> = ({ desc
         </Box>
         <Box>
           <Text fontSize="48px" fontWeight='600' lineHeight='56px' color='highlight'>27</Text>
-          {/* TODO: missing info icon  */}
-          <Text fontSize="24px" fontWeight='600' lineHeight='24px' color='dark.text'>cidades +100</Text>
+          <Flex>
+            <Text
+              fontSize="24px"
+              fontWeight='600'
+              lineHeight='24px'
+              color='dark.text'
+            >
+              cidades +100
+
+            </Text>
+            <Flex align="center" ml='5px' color='dark.info50'>
+              <Tooltip label='Cidades' aria-label="A tooltip">
+                <Box>
+                  <MdOutlineInfo />
+                </Box>
+              </Tooltip>
+            </Flex>
+          </Flex>
         </Box>
       </Flex>
     </Flex>

@@ -28,6 +28,8 @@ export const Carousel: React.FC = (): JSX.Element => {
               flexDirection='column'
               h='450px'
               bgImage={`url('${continent.bgImageUrl}')`}
+              backgroundSize='cover'
+              backgroundPosition='left'
               onClick={() => router.push(`${continent.pageUrl}`)}
             >
               <Box textAlign='center'>

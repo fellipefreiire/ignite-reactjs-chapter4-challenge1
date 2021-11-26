@@ -1,27 +1,26 @@
-//TODO: fix continent background image and description
 export const continentsInfo = [
   {
     name: 'América do Norte',
     description: 'O continente mais antigo.',
-    bgImageUrl: '/europe.png',
+    bgImageUrl: '/north-america.jpg',
     pageUrl: '/america-do-norte'
   },
   {
     name: 'América do Sul',
     description: 'O continente mais antigo.',
-    bgImageUrl: '/europe.png',
+    bgImageUrl: '/south-america.jpg',
     pageUrl: '/america-do-sul'
   },
   {
     name: 'Ásia',
     description: 'O continente mais antigo.',
-    bgImageUrl: '/europe.png',
+    bgImageUrl: '/asia.jpg',
     pageUrl: '/asia'
   },
   {
     name: 'África',
     description: 'O continente mais antigo.',
-    bgImageUrl: '/europe.png',
+    bgImageUrl: '/africa.jpg',
     pageUrl: '/africa'
   },
   {
@@ -33,7 +32,7 @@ export const continentsInfo = [
   {
     name: 'Oceania',
     description: 'O continente mais antigo.',
-    bgImageUrl: '/europe.png',
+    bgImageUrl: '/oceania.jpg',
     pageUrl: '/oceania'
   },
 ]

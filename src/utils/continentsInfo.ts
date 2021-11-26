@@ -1,6 +1,4 @@
-//TODO: finish continents info
 export const continentDescriptions = [
-  //TODO: change africa cities photos
   {
     name: 'africa',
     text: 'A África é um continente localizado na zona intertropical, com maior parte do seu território no Hemisfério Sul. Possui mais de um bilhão de habitantes e 30 milhões de km2 de extensão, sendo, por isso, considerado um dos maiores e mais populosos continentes do mundo.',
@@ -37,7 +35,6 @@ export const continentDescriptions = [
       },
     ]
   },
-  //TODO: change northAmerica cities photos
   {
     name: 'northAmerica',
     text: 'A América do Norte é um subcontinente do continente americano, também formado pela América Central e América do Sul. A região limita-se ao leste com o oceano Atlântico, a oeste com o oceano Pacífico, ao norte com o oceano Ártico e ao sul com a América Central e o Caribe.',
@@ -74,7 +71,6 @@ export const continentDescriptions = [
       },
     ]
   },
-  //TODO: change southAmerica cities photos
   {
     name: 'southAmerica',
     text: 'A América do Sul está localizada em grande parte no hemisfério sul, na zona intertropical ocidental. A América do Sul abrange um território de 18 milhões de quilômetros quadrados e é banhada a leste pelo oceano Atlântico, a oeste pelo oceano Pacífico e ao norte pelo mar das Antilhas, conhecido como do Caribe.',
@@ -111,7 +107,6 @@ export const continentDescriptions = [
       },
     ]
   },
-  //TODO: change asia cities photos
   {
     name: 'asia',
     text: 'A Ásia é o maior continente em área terrestre do mundo, estando boa parte do continente localizado no Hemisfério Norte. Além de ser o mais extenso, é também o mais populoso, habitando nele cerca de três quintos da população mundial.',
@@ -184,7 +179,6 @@ export const continentDescriptions = [
       },
     ]
   },
-  //TODO: change oceania cities photos
   {
     name: 'oceania',
     text: 'A Oceania é um continente localizado a sudeste da Ásia, compreendendo um conjunto de ilhas somado à Austrália, essa última considerada como uma massa continental chamada de “Australásia”. Possui uma área total de 8.480.355 km², onde habitam aproximadamente 38 milhões de pessoas.',
