@@ -11,14 +11,14 @@ const Home: NextPage = () => {
       <Header isHome={true} />
       <Banner />
       <TravelTypes />
-      <Divider w='90px' mt='80px' mb='52px' ml='auto' mr='auto' borderColor='dark.text' />
+      {/* <Divider w='90px' mt='80px' mb='52px' ml='auto' mr='auto' borderColor='dark.text' />
       <Box mb='52px'>
         <Text textAlign='center' fontSize='32px' fontWeight='500'>
           Vamos nessa?<br />
           Então escolha seu continente
         </Text>
       </Box>
-      <Carousel />
+      <Carousel /> */}
     </Box>
   )
 }

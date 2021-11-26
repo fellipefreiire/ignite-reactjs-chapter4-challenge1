@@ -18,12 +18,12 @@ export const TravelTypes: React.FC = (): JSX.Element => {
           justifyContent='center'
           alignItems='center'
         >
-          <Image
+          {/* <Image
             src={item.img}
             width={85}
             height={85}
             alt={item.alt}
-          />
+          /> */}
           <Text fontSize='24px' fontWeight='600' mt='24px'>
             {item.text}
           </Text>
