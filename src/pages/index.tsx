@@ -12,15 +12,19 @@ const Home: NextPage = () => {
       <Banner />
       <TravelTypes />
       <Divider
-        w={['60px', '90px']}
-        mt={['36px', '80px']}
-        mb={['24px', '52px']}
+        w={[null, null, '60px', '75px', '90px']}
+        mt={[null, null, '36px', '58px', '80px']}
+        mb={[null, null, '24px', '38px', '52px']}
         ml='auto'
         mr='auto'
         borderColor='dark.text'
       />
-      <Box mb={['20px', '52px']}>
-        <Text textAlign='center' fontSize={['20px', '32px']} fontWeight='500'>
+      <Box mb={[null, null, '20px', '36px', '52px']}>
+        <Text
+          textAlign='center'
+          fontSize={[null, null, '20px', '26px', '32px']}
+          fontWeight='500'
+        >
           Vamos nessa?<br />
           Então escolha seu continente
         </Text>

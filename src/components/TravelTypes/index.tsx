@@ -5,25 +5,25 @@ import { data } from './content'
 export const TravelTypes: React.FC = (): JSX.Element => {
   return (
     <Flex
-      w={['375px', '1160px']}
+      w={[null, null, '375px', '668px', '1160px']}
       h='145'
-      justifyContent={['space-between', 'space-between']}
-      alignItems={['center', 'center']}
+      justifyContent={[null, null, 'space-between', null, null]}
+      alignItems={[null, null, 'center', null, null]}
       m='auto'
-      mt={['36px', '114px']}
-      pl={['50px', '0']}
-      pr={['50px', '0']}
+      mt={[null, null, '36px', null, '114px']}
+      pl={[null, null, '50px', '0', null]}
+      pr={[null, null, '50px', '0', null]}
       wrap='wrap'
     >
       {data.map(item => (
         <Flex
           key={item.alt}
-          direction={['row', 'column']}
+          direction={[null, null, 'row', 'column', null]}
           justifyContent='center'
           alignItems='center'
           m='auto'
         >
-          <Box display={['none', 'block']}>
+          <Box display={[null, null, 'none', null, 'block']}>
             <Image
               src={item.img}
               width={85}
@@ -31,18 +31,26 @@ export const TravelTypes: React.FC = (): JSX.Element => {
               alt={item.alt}
             />
           </Box>
+          <Box display={[null, null, 'none', 'block', 'none']}>
+            <Image
+              src={item.img}
+              width={50}
+              height={50}
+              alt={item.alt}
+            />
+          </Box>
           <Box
-            display={['block', 'none']}
+            display={[null, null, 'block', 'none', null]}
             w='8px'
             h='8px'
             bgColor='highlight'
             borderRadius='50%'
           />
           <Text
-            fontSize={['18px', '24px']}
-            fontWeight={['500', '600']}
-            mt={['0', '24px']}
-            ml={['8px', '0']}
+            fontSize={[null, null, '18px', '21px', '24px']}
+            fontWeight={[null, null, '500', '600', null]}
+            mt={[null, null, '0', null, '24px']}
+            ml={[null, null, '8px', null, '0']}
           >
             {item.text}
           </Text>

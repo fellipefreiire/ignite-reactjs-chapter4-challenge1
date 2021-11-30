@@ -1,11 +1,21 @@
 .swiper-button-next {
   margin-right: 8px;
+
+  @media (min-width: 768px) {
+    margin-right: 28px;
+  }
+
   @media (min-width: 1200px) {
     margin-right: 45px;
   }
 }
 .swiper-button-prev {
   margin-left: 8px;
+
+  @media (min-width: 768px) {
+    margin-left: 28px;
+  }
+
   @media (min-width: 1200px) {
     margin-left: 45px;
   }
@@ -20,6 +30,11 @@ div .swiper-pagination-bullet {
   height: 8px;
   background: #999999;
   opacity: 1;
+
+  @media (min-width: 768px) {
+    width: 12px;
+    height: 12px;
+  }
 
   @media (min-width: 1200px) {
     width: 16px;

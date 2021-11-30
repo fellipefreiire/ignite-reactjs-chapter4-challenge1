@@ -11,7 +11,12 @@ export const Carousel: React.FC = (): JSX.Element => {
   const router = useRouter()
 
   return (
-    <Box w={['375px', '1240px']} h={['250px', '450px']} m='auto' mb={['24px', '40px']}>
+    <Box
+      w={[null, null, '375px', '768px', '1240px']}
+      h={[null, null, '250px', '350px', '450px']}
+      m='auto'
+      mb={[null, null, '24px', '32px', '40px']}
+    >
       <Swiper
         navigation
         pagination={{
@@ -26,15 +31,27 @@ export const Carousel: React.FC = (): JSX.Element => {
               justifyContent='center'
               alignItems='center'
               flexDirection='column'
-              h={['250px', '450px']}
+              h={[null, null, '250px', '350px', '450px']}
               bgImage={`url('${continent.bgImageUrl}')`}
               backgroundSize='cover'
               backgroundPosition='left'
               onClick={() => router.push(`${continent.pageUrl}`)}
             >
               <Box textAlign='center'>
-                <Text fontSize={['24px', '48px']} fontWeight='700' color='light.text'>{continent.name}</Text>
-                <Text fontSize={['14px', '24px']} fontWeight='700' color='light.info'>{continent.description}</Text>
+                <Text
+                  fontSize={[null, null, '24px', '32px', '48px']}
+                  fontWeight='700'
+                  color='light.text'
+                >
+                  {continent.name}
+                </Text>
+                <Text
+                  fontSize={[null, null, '14px', '20px', '24px']}
+                  fontWeight='700'
+                  color='light.info'
+                >
+                  {continent.description}
+                </Text>
               </Box>
             </Flex>
           </SwiperSlide>
