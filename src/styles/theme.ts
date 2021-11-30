@@ -44,7 +44,7 @@ export const theme = extendTheme({
         bg: theme.colors.light.white,
         color: theme.colors.dark.text,
         margin: 'auto',
-        maxWidth: '1440px',
+        maxWidth: '1920px',
         fontFamily: theme.fonts.main
       },
     })

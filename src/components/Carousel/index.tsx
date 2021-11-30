@@ -12,10 +12,10 @@ export const Carousel: React.FC = (): JSX.Element => {
 
   return (
     <Box
-      w={[null, null, '375px', '768px', '1240px']}
-      h={[null, null, '250px', '350px', '450px']}
+      w={[null, null, '375px', '768px', '1240px', '1400px']}
+      h={[null, null, '250px', '350px', '450px', '550px']}
       m='auto'
-      mb={[null, null, '24px', '32px', '40px']}
+      mb={[null, null, '24px', '32px', '40px', '48px']}
     >
       <Swiper
         navigation
@@ -31,7 +31,7 @@ export const Carousel: React.FC = (): JSX.Element => {
               justifyContent='center'
               alignItems='center'
               flexDirection='column'
-              h={[null, null, '250px', '350px', '450px']}
+              h={[null, null, '250px', '350px', '450px', '550px']}
               bgImage={`url('${continent.bgImageUrl}')`}
               backgroundSize='cover'
               backgroundPosition='left'
@@ -39,14 +39,14 @@ export const Carousel: React.FC = (): JSX.Element => {
             >
               <Box textAlign='center'>
                 <Text
-                  fontSize={[null, null, '24px', '32px', '48px']}
+                  fontSize={[null, null, '24px', '32px', '48px', '60px']}
                   fontWeight='700'
                   color='light.text'
                 >
                   {continent.name}
                 </Text>
                 <Text
-                  fontSize={[null, null, '14px', '20px', '24px']}
+                  fontSize={[null, null, '14px', '20px', '24px', '28px']}
                   fontWeight='700'
                   color='light.info'
                 >

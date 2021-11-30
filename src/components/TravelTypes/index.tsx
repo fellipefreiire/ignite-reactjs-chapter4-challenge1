@@ -5,10 +5,10 @@ import { data } from './content'
 export const TravelTypes: React.FC = (): JSX.Element => {
   return (
     <Flex
-      w={[null, null, '375px', '668px', '1160px']}
+      w={[null, null, '375px', '668px', '1160px', '1400px']}
       h='145'
-      justifyContent={[null, null, 'space-between', null, null]}
-      alignItems={[null, null, 'center', null, null]}
+      justifyContent={[null, null, 'space-between']}
+      alignItems={[null, null, 'center']}
       m='auto'
       mt={[null, null, '36px', null, '114px']}
       pl={[null, null, '50px', '0', null]}
@@ -23,7 +23,15 @@ export const TravelTypes: React.FC = (): JSX.Element => {
           alignItems='center'
           m='auto'
         >
-          <Box display={[null, null, 'none', null, 'block']}>
+          <Box display={[null, null, 'none', null, null, 'block']}>
+            <Image
+              src={item.img}
+              width={120}
+              height={120}
+              alt={item.alt}
+            />
+          </Box>
+          <Box display={[null, null, 'none', null, 'block', 'none']}>
             <Image
               src={item.img}
               width={85}
@@ -47,7 +55,7 @@ export const TravelTypes: React.FC = (): JSX.Element => {
             borderRadius='50%'
           />
           <Text
-            fontSize={[null, null, '18px', '21px', '24px']}
+            fontSize={[null, null, '18px', '21px', '24px', '27px']}
             fontWeight={[null, null, '500', '600', null]}
             mt={[null, null, '0', null, '24px']}
             ml={[null, null, '8px', null, '0']}

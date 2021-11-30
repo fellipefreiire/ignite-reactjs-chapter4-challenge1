@@ -12,17 +12,17 @@ const Home: NextPage = () => {
       <Banner />
       <TravelTypes />
       <Divider
-        w={[null, null, '60px', '75px', '90px']}
-        mt={[null, null, '36px', '58px', '80px']}
-        mb={[null, null, '24px', '38px', '52px']}
+        w={[null, null, '60px', '75px', '90px', '105px']}
+        mt={[null, null, '36px', '58px', '80px', '91px']}
+        mb={[null, null, '24px', '38px', '52px', '60px']}
         ml='auto'
         mr='auto'
         borderColor='dark.text'
       />
-      <Box mb={[null, null, '20px', '36px', '52px']}>
+      <Box mb={[null, null, '20px', '36px', '52px', '60px']}>
         <Text
           textAlign='center'
-          fontSize={[null, null, '20px', '26px', '32px']}
+          fontSize={[null, null, '20px', '26px', '32px', '38px']}
           fontWeight='500'
         >
           Vamos nessa?<br />

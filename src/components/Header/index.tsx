@@ -13,7 +13,7 @@ export const Header: React.FC<HeaderProps> = ({ isHome }): JSX.Element => {
   return (
     <>
       {isHome && <Flex
-        h={[null, null, '50', '75', '100', '125']}
+        h={[null, null, '50', '75', '100']}
         bgColor='light.white'
         alignItems='center'
         justifyContent='center'
@@ -30,7 +30,7 @@ export const Header: React.FC<HeaderProps> = ({ isHome }): JSX.Element => {
         </Box>
       </Flex>}
       {!isHome && <Flex
-        h={[null, null, '50', '75', '100', '125']}
+        h={[null, null, '50', '75', '100']}
         bgColor='light.white'
         alignItems='center'
         justifyContent='space-between'
