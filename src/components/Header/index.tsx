@@ -34,12 +34,15 @@ export const Header: React.FC<HeaderProps> = ({ isHome }): JSX.Element => {
         bgColor='light.white'
         alignItems='center'
         justifyContent='space-between'
-        pl='140px'
-        pr='140px'
+        pl='16px'
+        pr={[null, null, '140px', '195px', '140px', '380px']}
       >
         <MdOutlineArrowBackIosNew onClick={() => { router.push('/') }} />
 
-        <Box mr='488px'>
+        <Box
+          mr={[null, null, '0', '100px', '488px']}
+          ml={[null, null, '115px']}
+        >
           <Image
             src='/logo.svg'
             width={184}

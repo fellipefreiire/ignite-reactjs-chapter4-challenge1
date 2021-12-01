@@ -1,4 +1,4 @@
-import { Box, Text } from "@chakra-ui/react"
+import { Flex, Text } from "@chakra-ui/react"
 
 interface ContinentBannerProps {
   backgroundUrl: string
@@ -10,10 +10,23 @@ export const ContinentBanner: React.FC<ContinentBannerProps> = ({
   continentName
 }): JSX.Element => {
   return (
-    <Box bgImage={`url('${backgroundUrl}')`} pt='370px' pl='140px' pr='140px' h='500px'>
-      <Text fontSize='48px' fontWeight='600' color='light.headings'>
+    <Flex
+      bgImage={`url('${backgroundUrl}')`}
+      pt={[null, null, '0', null, '370px', '510px']}
+      pl={[null, null, '0', null, '140px']}
+      pr={[null, null, '0', null, '140px']}
+      h={[null, null, '150px', '325px', '500px', '675px']}
+      align={[null, null, 'center', null, 'normal']}
+      justify={[null, null, 'center', null, 'normal']}
+      bgSize={[null, null, 'cover']}
+    >
+      <Text
+        fontSize={[null, null, '28px', '48px', null, '64px']}
+        fontWeight={[null, null, '600']}
+        color='light.headings'
+      >
         {continentName}
       </Text>
-    </Box>
+    </Flex>
   )
 }

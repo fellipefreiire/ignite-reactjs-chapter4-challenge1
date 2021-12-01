@@ -7,32 +7,91 @@ interface ContinentDescriptionProps {
 
 export const ContinentDescription: React.FC<ContinentDescriptionProps> = ({ description }): JSX.Element => {
   return (
-    <Flex mt='80px' mb='80px' pl='140px' pr='140px' justify='space-between'>
-      <Box w='600px' h='211px'>
-        <Text fontSize="24px" color='dark.text' textAlign='justify'>
+    <Flex
+      mt={[null, null, '24px', '24px', '80px', null]}
+      mb={[null, null, '32px', '32px', '80px', null]}
+      pl={[null, null, '0', null, '140px', null]}
+      pr={[null, null, '0', null, '140px', null]}
+      justify='space-between'
+      direction={[null, null, 'column', null, 'row', null]}
+    >
+      <Box
+        w={[null, null, '375px', '768px', '600px', '800px']}
+        pl={[null, null, '16px', '32px', '0', null]}
+        pr={[null, null, '16px', '32px', '0', null]}
+        h={[null, null, '146px', '211px', null, '300px']}
+        mb={[null, null, '16px', '0', null, null]}
+      >
+        <Text
+          fontSize={[null, null, '14px', "24px", null, '32px']}
+          color='dark.text'
+          textAlign='justify'
+        >
           {description}
         </Text>
       </Box>
-      <Flex w='470px' justify='space-between' align='center' textAlign='center'>
+      <Flex
+        w={[null, null, '375px', '470px', null, '650px']}
+        pl={[null, null, '24px', '0', null, null]}
+        pr={[null, null, '24px', '0', null, null]}
+        m={'auto'}
+        justify='space-between'
+        align='center'
+        textAlign='center'
+      >
         <Box>
-          <Text fontSize="48px" fontWeight='600' lineHeight='56px' color='highlight'>50</Text>
-          <Text fontSize="24px" fontWeight='600' lineHeight='24px' color='dark.text'>países</Text>
+          <Text
+            fontSize={[null, null, '24px', '48px', null, '72px']}
+            fontWeight='600'
+            lineHeight={[null, null, '24px', '56px', null, '88px']}
+            color='highlight'
+          >
+            50
+          </Text>
+          <Text
+            fontSize={[null, null, '18px', '24px', null, '32px']}
+            fontWeight={[null, null, '500', '600', null, null]}
+            lineHeight='24px'
+            color='dark.text'
+          >
+            países
+          </Text>
         </Box>
         <Box>
-          <Text fontSize="48px" fontWeight='600' lineHeight='56px' color='highlight'>60</Text>
-          <Text fontSize="24px" fontWeight='600' lineHeight='24px' color='dark.text'>línguas</Text>
+          <Text
+            fontSize={[null, null, '24px', '48px', null, '72px']}
+            fontWeight='600'
+            lineHeight={[null, null, '24px', '56px', null, '88px']}
+            color='highlight'
+          >
+            60
+          </Text>
+          <Text
+            fontSize={[null, null, '18px', '24px', null, '32px']}
+            fontWeight={[null, null, '500', '600', null, null]}
+            lineHeight='24px'
+            color='dark.text'
+          >
+            línguas
+          </Text>
         </Box>
         <Box>
-          <Text fontSize="48px" fontWeight='600' lineHeight='56px' color='highlight'>27</Text>
+          <Text
+            fontSize={[null, null, '24px', '48px', null, '72px']}
+            fontWeight='600'
+            lineHeight={[null, null, '24px', '56px', null, '88px']}
+            color='highlight'
+          >
+            27
+          </Text>
           <Flex>
             <Text
-              fontSize="24px"
-              fontWeight='600'
+              fontSize={[null, null, '18px', '24px', null, '32px']}
+              fontWeight={[null, null, '500', '600', null, null]}
               lineHeight='24px'
               color='dark.text'
             >
               cidades +100
-
             </Text>
             <Flex align="center" ml='5px' color='dark.info50'>
               <Tooltip label='Cidades' aria-label="A tooltip">

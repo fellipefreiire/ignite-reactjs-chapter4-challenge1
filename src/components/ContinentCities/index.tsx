@@ -14,14 +14,33 @@ interface ContinentCitiesProps {
 
 export const ContinentCities: React.FC<ContinentCitiesProps> = ({ cities }): JSX.Element => {
   return (
-    <Flex direction="column" mb='35px' pl='140px' pr='140px'>
-      <Heading fontSize='36px' color='dark.headings'>
+    <Flex
+      direction="column"
+      mb='35px'
+      pl={[null, null, '16px', null, '140px']}
+      pr={[null, null, '16px', null, '140px']}
+    >
+      <Heading
+        fontSize={[null, null, '24px', '30px', '36px', '42px']}
+        fontWeight={[null, null, '500', '600']}
+        color='dark.headings'
+      >
         Cidades +100
       </Heading>
 
-      <Flex mt='40px' css={{ gap: '45px' }} wrap='wrap'>
+      <Flex
+        mt={[null, null, '20px', '32px', '40px']}
+        css={{ gap: '45px' }}
+        wrap='wrap'
+        justify={[null, null, 'center', null, 'normal']}
+      >
         {cities?.map(city => (
-          <Flex direction="column" key={city.name} w='256px' h='279px' >
+          <Flex
+            direction="column"
+            key={city.name}
+            w='256px'
+            h='279px'
+          >
             <Image src={city.cityPhotoUrl} width={256} height={173} alt={city.name} />
             <Flex
               p='24px'
